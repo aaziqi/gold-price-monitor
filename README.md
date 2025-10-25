@@ -149,7 +149,45 @@ chmod +x scripts/deploy.sh
 ./scripts/deploy.sh --deploy
 ```
 
+## 🧭 使用 GitLens 上传到 GitHub
+
+> 如果您更习惯在 VS Code 内使用 GitLens 完成发布，请按以下步骤：
+
+1) 安装与准备
+- 在 VS Code 扩展市场安装 `GitLens`
+- 打开项目根目录：`gold-price-monitor`
+
+2) 初始化仓库（若尚未初始化）
+- 左侧 `SOURCE CONTROL`（源代码管理）面板点击 `Initialize Repository`
+- 或者使用 GitLens 命令面板：`GitLens: Initialize Repository`
+
+3) 连接远程仓库
+- 在 GitLens 侧边栏选择 `Remotes` > `Add Remote`
+- 粘贴您的 GitHub 仓库地址（例如：`https://github.com/your-username/gold-price-monitor.git`）
+- 也可使用 `Publish Repository` 功能直接发布到 GitHub（GitLens会引导创建远程）
+
+4) 暂存与提交
+- 在 `SOURCE CONTROL` 面板点击 `+`（Stage All Changes）
+- 填写提交信息（如：`feat: 初始化黄金价格监控平台项目`），点击 `Commit`
+
+5) 推送到 GitHub
+- 在 `SOURCE CONTROL` 或 GitLens 中点击 `Push`
+- 选择上游远程（`origin`）与主分支（`main`/`master`），完成推送
+
+6) 验证
+- 打开您的 GitHub 仓库页面，确认文件与README均已上传
+
+> 备用：命令行方式请参考 `GITHUB_SETUP.md`。
+
+---
+
 ## 📖 项目文档
+
+- 技术总览：`docs/TECHNICAL_OVERVIEW.md`
+- API 文档：`docs/API.md`
+- 部署指南：`docs/DEPLOYMENT.md`
+- GitHub 上传（命令行）：`GITHUB_SETUP.md`
+
 
 ### 🔌 API 接口
 
