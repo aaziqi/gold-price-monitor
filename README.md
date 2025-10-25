@@ -392,9 +392,9 @@ curl http://localhost:80/health
 
 ## 📞 联系我们
 
-- 📧 邮箱: contact@goldmonitor.com
-- 🐙 GitHub: [@goldmonitor](https://github.com/goldmonitor)
-- 📖 文档: [项目文档](https://goldmonitor.github.io/docs)
+- 📧 邮箱: omglaq@gmail.com
+- 🐙 GitHub: [@goldmonitor]((https://github.com/aaziqi/gold-price-monitor))
+- 📖 文档: [项目文档]((https://github.com/aaziqi/gold-price-monitor))
 
 ---
 
