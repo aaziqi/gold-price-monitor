@@ -1,0 +1,63 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gold-price-monitor
+  
+  # WebSocket 配置
+  websocket:
+    allowed-origins: "*"
+    
+  # HTTP 客户端配置
+  webflux:
+    timeout:
+      connect: 5000
+      read: 10000
+
+# 自定义配置
+gold:
+  api:
+    # 黄金价格API配置 - 使用goldprice.org免费服务
+    url: ${GOLD_API_URL:https://data-asg.goldprice.org/dbXRates/USD}
+    key: ${GOLD_API_KEY:gold_api_key}
+    timeout: 10000
+  
+  # 定时任务配置
+  scheduler:
+    # 价格更新间隔（秒）
+    price-update-interval: ${PRICE_UPDATE_INTERVAL:30}
+    # 初始延迟（秒）
+    initial-delay: 5
+    # 强制启用（用于演示）
+    force-enabled: true
+
+# 日志配置
+logging:
+  level:
+    com.goldmonitor: DEBUG
+    org.springframework.web.socket: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+# 监控配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+
+---
+# 生产环境配置
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+logging:
+  level:
+    com.goldmonitor: INFO
+    root: WARN
