@@ -1,33 +1,42 @@
-# 🏆 实时黄金价格监控与可视化平台
+# 🏆 黄金价格监控平台
 
-<div align="center">
+> 实时黄金价格监控与分析平台 - 部署在 Vercel
 
-![Gold Price Monitor](https://img.shields.io/badge/Gold%20Price-Monitor-gold?style=for-the-badge&logo=chart-line)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.0-brightgreen?style=flat-square&logo=spring-boot)
-![Vue.js](https://img.shields.io/badge/Vue.js-3.3.8-4FC08D?style=flat-square&logo=vue.js)
-![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker)
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+## 🚀 快速部署
 
-**专业的实时黄金价格监控与可视化解决方案**
+### 一键部署到 Vercel
 
-[🚀 快速开始](#快速开始) • [📖 文档](#项目文档) • [🐳 部署](#部署指南) • [🤝 贡献](#贡献指南)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/gold-price-monitor)
 
-</div>
+### 手动部署
 
-## 📋 项目简介
+```bash
+# 1. 克隆项目
+git clone https://github.com/your-username/gold-price-monitor.git
+cd gold-price-monitor
 
-本项目是一个现代化的实时黄金价格监控与可视化平台，采用微服务架构和前后端分离设计。通过 WebSocket 技术实现价格数据的实时推送，使用 ECharts 提供专业的数据可视化，并通过 TailwindCSS 实现完美的响应式布局。
+# 2. 运行部署脚本 (Windows)
+.\deploy-vercel.ps1
 
-### ✨ 核心特性
+# 或者手动部署
+npm install -g vercel
+vercel --prod
+```
 
-- 🔄 **实时数据**: WebSocket 实时推送黄金价格变化
-- 📊 **专业图表**: ECharts 动态折线图展示价格趋势
-- 📱 **响应式设计**: 完美适配 PC、平板、手机等设备
-- 🚀 **高性能**: Spring Boot + Vue3 现代化技术栈
-- 🐳 **容器化**: Docker 一键部署，支持生产环境
-- 🔒 **安全可靠**: HTTPS、CORS、安全头等安全措施
-- 📈 **数据导出**: 支持历史数据 CSV 格式导出
-- 🎨 **现代UI**: 基于 TailwindCSS 的美观界面
+## 📱 功能特性
+
+- ✨ **实时价格监控** - 黄金价格实时更新
+- 📊 **数据可视化** - ECharts 图表展示
+- 📱 **响应式设计** - 支持移动端访问
+- 🔄 **自动刷新** - 数据自动更新
+- 🎨 **现代UI** - Tailwind CSS 美观界面
+
+## 🛠️ 技术栈
+
+- **前端**: Vue.js 3 + Vite + Tailwind CSS
+- **后端**: Vercel Serverless Functions
+- **图表**: ECharts
+- **部署**: Vercel Platform
 
 ## 🛠 技术架构
 

@@ -1,0 +1,35 @@
+# Vercel 部署忽略文件
+
+# 后端 Java 项目（不需要部署到 Vercel）
+backend/
+docker/
+docker-compose.yml
+
+# 开发文件
+*.log
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE 文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 临时文件
+tmp/
+temp/
+.cache/
+
+# 文档和脚本（可选）
+docs/
+scripts/
+*.md
+!README.md
+!VERCEL_DEPLOYMENT.md
+
+# 其他
+apache-maven-3.9.11-bin.zip

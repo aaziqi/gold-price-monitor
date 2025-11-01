@@ -1,0 +1,38 @@
+{
+  "name": "gold-price-monitor",
+  "version": "1.0.0",
+  "description": "实时黄金价格监控平台",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "dev": "cd frontend && npm run dev",
+    "start": "cd frontend && npm run preview",
+    "install-all": "npm install && cd frontend && npm install",
+    "vercel-build": "cd frontend && npm install && npm run build"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "gold",
+    "price",
+    "monitor",
+    "realtime",
+    "vue",
+    "vercel"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/gold-price-monitor.git"
+  }
+}
