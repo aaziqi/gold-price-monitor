@@ -1,9 +1,7 @@
 {
   "version": 2,
   "name": "gold-price-monitor",
-  "buildCommand": "cd frontend && npm run build",
   "outputDirectory": "frontend/dist",
-  "installCommand": "npm install && cd frontend && npm install",
   "functions": {
     "api/*.js": {
       "runtime": "@vercel/node@3.0.0"
