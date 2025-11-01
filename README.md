@@ -439,9 +439,10 @@ curl http://localhost:80/health
 
 ## 📞 联系我们
 
-- 📧 邮箱: omglaq@gmail.com
-- 🐙 GitHub: [@goldmonitor]((https://github.com/aaziqi/gold-price-monitor))
-- 📖 文档: [项目文档]((https://github.com/aaziqi/gold-price-monitor))
+- 📧 邮箱: omglaq@gmail.com  
+- 🐙 GitHub: [GitHub主页](https://github.com/aaziqi)  
+- 📖 文档: [项目文档](https://blog.csdn.net/weixin_73376427/article/details/153877652)
+
 
 ---
 
